@@ -1,0 +1,6 @@
+---
+- name: Restart Zabbix Agent Service
+  systemd:
+    name: zabbix-agent
+    state: restarted
+  listen: "Restart Zabbix Agent Service"
